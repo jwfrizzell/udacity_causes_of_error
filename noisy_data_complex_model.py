@@ -32,7 +32,7 @@ def plot_curve():
     # TODO: Use learning_curve imported above to create learning curves for both the
     #       training data and testing data. You'll need reg, X, y, cv and score from above.
     
-    train_sizes, train_scores, test_scores = learning_curve(# TODO)
+    train_sizes, train_scores, test_scores = learning_curve(reg, X, y, cv=cv, scoring=score)
     
     # Taking the mean of the test and training scores
     train_scores_mean = np.mean(train_scores,axis=1)
